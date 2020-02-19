@@ -1,0 +1,3 @@
+SELECT year(order_date) AS aasta, count(*) AS tellimused
+FROM orders
+GROUP BY year(order_date)
