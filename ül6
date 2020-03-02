@@ -1,0 +1,3 @@
+SELECT year(order_date) AS aasta, count(*) AS müüdud_raamatute_hulk, SUM(price) AS summa_kokku
+FROM orders, books
+group by year(order_date) = 2017
